@@ -26,7 +26,7 @@
             <tbody>
                 @foreach( $posts as $post )
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">{{ $post->id }}</th>
                         <td>{{ $post->title  }}</td>
                         <td>{{ $post->get_author->name  }}</td>
                         <td>{{ $post->created_at->format('d F Y')  }}</td>
